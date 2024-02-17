@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+.main_container {
+    width: 640px;
+    box-shadow: 1px 1px 15px 0px rgba(0,0,0, 0.3);
+}
+.bottom_containers {
+    display: flex;
+}
+.join_container {
+    border-radius: 6px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2.2rem 2rem;
+}
+.join_container h1 {
+    font-weight: bold;
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 1.2rem;
+}
+.join_container .first-p{
+    font-weight: bold;
+    color: hsl(71, 73%, 54%);
+    padding-bottom: .8rem;
+}
+.join_container .second-p {
+    color: hsla(218, 22%, 67%, 0.8);
+}
+.subscription_container,
+.why_container {
+    flex-basis: 50%;
+    padding: 2rem 2.5rem;
+}
+.subscription_container {
+    background-color: hsl(179,62%,43%);
+}
+.price {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding-bottom: .6rem;
+}
+.price h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+.price-p {
+    color: hsla(204, 43%, 93%, 0.7);
+}
+.sub-p2 {
+    margin-top: .2rem;
+    font-size: 1rem;
+    color: hsla(204, 43%, 93%, 0.9);
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+#signUp {
+    width: 100%;
+    color: #fff;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 7px;
+    font-family: 'Karla', sans-serif;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+}
+#signUp:hover {
+    cursor: pointer;
+    background: hsl(218, 22%, 67%);
+}
+.subscription_container h3,
+.why_container h3{
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 1.1rem;
+}
+ul {
+    list-style: none;
+}
+li {
+    font-size: 1.1rem;
+    color: hsla(204, 43%, 93%, 0.9);
+}
+.why_container {
+    background-color: hsl(179,47%,52%);
+}
+@media (max-width: 760px) {
+    .main_container {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom_containers {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper {
+        padding: 4rem 2rem;
+    }
+}
