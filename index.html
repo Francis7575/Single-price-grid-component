@@ -6,42 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
   <title>Frontend Mentor | Single Price Grid Component</title>
-
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <div class="wrapper">
-    <main class="main_container">
-      <section class="join_container">
-        <div>
-          <h1>Join our community</h1>
-          <p class="first-p">30-day, hassle-free money back guarantee</p>
-          <p class="second-p">
-            Gain access to our full library of tutorials along with expert code reviews.
-            Perfect for any developers who are serious about honing their skills.
-          </p>
-        </div>
+    <main class="main__container">
+      <section class="join__container">
+        <h1 class="join__h1">Join our community</h1>
+        <p class="join__first__p">30-day, hassle-free money back guarantee</p>
+        <p class="join__second__p">
+          Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who
+          are serious about honing their skills.
+        </p>
       </section>
 
-      <div class="bottom_containers">
-        <section class="subscription_container">
-          <h3>Monthly Subscription</h3>
-          <span class="price">
-            <h1>$29</h1>
-            <p class="price-p">per month</p>
-          </span>
-          <p class="sub-p2">Full access for less than $1 a day</p>
-          <a href="#">
-            <button id="signUp">Sign Up</button>
-          </a>
-        </section>
+      <section class="two__containers__section">
+        <div class="monthly__sub__container">
+          <h2 class="monthly__h2">Monthly Subscription</h2>
+          <p class="monthly__first__p">
+            <span class="monthly__price">$29</span>
+            <span class="monthly__period">per month</span>
+          </p>
+          <p class="monthly__second__p">Full access for less than $1 a day</p>
+          <button id="signBtn">Sign Up</button>
+        </div>
 
-        <section class="why_container">
-          <h3>Why Us</h3>
-          <ul>
+        <div class="why__us__container">
+          <h2 class="why__h2">Why Us</h2>
+          <ul class="why__ul">
             <li>Tutorials by industry experts</li>
             <li>Peer & expert code review</li>
             <li>Coding exercises</li>
@@ -50,8 +48,8 @@
             <li>Flashcard decks</li>
             <li>New videos every week</li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
   </div>
 </body>
