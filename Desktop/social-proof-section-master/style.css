@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+body {
+    background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right 50vw bottom 59vh, top 20vh left 29vw;
+    min-width: 1126px;
+}
+.main_container {
+    max-width: 1440px;
+    width: 100%;    
+    padding: 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+}
+.top_part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;   
+}
+.header_container h1{
+    color: hsl(300, 43%, 22%);
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+.header_container p {
+    margin-top: 2rem;
+    color:hsl(303, 10%, 53%); 
+    line-height: 1.3rem;  
+    font-size: 1rem;
+}
+.stars_section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 35rem;
+}
+.reviews_container {
+    align-self: baseline;
+}
+.report_container {
+    align-self: center;
+}
+.best-tech_container {
+    align-self: flex-end;
+}
+.stars_section p {
+    color :hsl(300, 43%, 22%);
+    font-weight: 700;
+    margin-left: 1rem;
+}
+.reviews_container,
+.report_container,
+.best-tech_container {
+    width: 27rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 1.2rem 2.2rem;
+    background-color: hsl(300, 24%, 96%);
+}
+.feedbacks {
+    display: flex;
+    gap: 2.2rem;
+    min-height: 20.5rem;
+    margin-top: 3rem;
+}
+.first_person,
+.second_person,
+.third_person {
+    display: flex;
+    flex-direction: column; 
+    height: 18rem; 
+    gap: 1.5rem;
+    background-color: hsl(300, 43%, 22%);
+    padding: 2.8rem 2rem;
+    border-radius: 8px;
+}
+.first_person {
+    align-self: baseline;
+}
+.second_person {
+    align-self: center;
+}
+.third_person {
+    align-self: flex-end;
+}
+.profile-image_container {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+.profile_image {
+    display: block;
+    max-width: 2.8rem;
+    border-radius: 50%;
+}
+.customer_info {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+.names {
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+}
+.status {
+    color: hsla(333, 80%, 67%, .70);
+}
+.paragraph {
+    color: hsla(0, 0%, 100%, 0.95);
+    line-height: 1.4rem;
+    font-size: 1rem;
+}
+@media (max-width: 1050px) {
+    body {
+        background-image: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: left -5vw bottom 140vh, right -10vw top 100vh;
+        min-width: 660px;
+    }
+    .main_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+    }
+    .header_container {
+        text-align: center;
+    }
+    .top_part {
+        display: flex;
+        flex-direction: column;
+    }
+    .stars_section {
+        display: flex;
+        min-height: 0;
+        margin-top: 2rem;
+    }
+    .reviews_container,
+    .report_container,
+    .best-tech_container {
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        padding: 2.2rem;
+        line-height: 1.2rem;
+    }
+    .stars {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+    }
+    .feedbacks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        min-height: 0;
+        max-width: 40rem;
+        padding: 0 4rem;
+        margin-top: 2.5rem;
+    }
+    .first_person,
+    .second_person,
+    .third_person {
+        height: 0;
+        padding: 2rem 2rem 10rem 2rem;
+    }
+}
