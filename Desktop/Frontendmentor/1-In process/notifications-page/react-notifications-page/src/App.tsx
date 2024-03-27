@@ -1,8 +1,9 @@
+import NotificationsPage from './pages/NotificationsPage'
 
 const App = () => {
   return (
     <>
-    
+      <NotificationsPage />
     </>
   )
 }
